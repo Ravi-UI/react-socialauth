@@ -1,0 +1,58 @@
+.form-row {
+	display: flex;
+	flex-flow: column-reverse;
+	margin-bottom: 1.5em;
+}
+.form-row label, .form-row input {
+	transition: all 0.2s;
+	touch-action: manipulation;
+}
+
+.form-row input {
+	background: transparent;
+	font-size: 1.2em;
+	line-height: 1.8rem;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	font-family: inherit;
+	-webkit-appearance: none;
+	border-radius: 0;
+	padding: 0;
+	cursor: text;
+}
+
+.form-row input:focus {
+	outline: 0;
+	border-bottom: 1px solid #666;
+}
+
+.form-row label {
+	letter-spacing: 0.05em;
+	font-size: 14px;
+}
+
+.form-row input:placeholder-shown + label {
+	cursor: text;
+	max-width: 66.66%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transform-origin: left bottom;
+	transform: translate(0, 2.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+	opacity: 0;
+	transition: inherit;
+	font-size: 20px;
+}
+
+.form-row input:focus::-webkit-input-placeholder {
+ 	opacity: 0.2;
+}
+.form-row input:not(:placeholder-shown) + label,
+.form-row input:focus + label {
+	transform: translate(0, 0) scale(1);
+	cursor: pointer;
+	text-transform: uppercase;
+}

@@ -1,0 +1,183 @@
+.file-room-wrapper{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.login{
+	max-width: 500px;
+    width: 100%;
+    padding: 50px 30px;
+}
+.button-row{
+	margin-bottom: 1em;
+}
+.button-row button:not(:last-child){
+	margin-right: 20px;
+}
+.d-flex{
+	display: flex;
+}
+.d-vh-center{
+	align-items: center;
+	justify-content: center;
+}
+.link-button{
+	background: transparent;
+}
+.pt-20{
+	padding-top: 20px;
+}
+
+
+/* style for dashboard */
+.dashboard{
+	min-height: calc(100vh - 90px);
+	background: whitesmoke;
+}
+.container-sub{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+header{
+	height: 90px;
+	padding: 20px;
+}
+.user-profile{
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 12px;
+    color: white;
+}
+.user-profile h6{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.search{
+	position: relative;
+	margin-bottom: 0px;
+}
+.search input{
+	width: 100%!important;
+	padding-right: 200px;
+	margin-right: 0px!important;
+}
+.search button{
+	max-width: 200px;
+	color:#2e2e2e!important;
+	background: #a9d4c7;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 42.5px;
+}
+.search button:hover{
+	background: #a9d4c7;
+}
+ul{
+	margin: 0px;
+}
+li{
+	list-style: none;
+	margin-bottom: 0px;
+}
+.top-nav ul{
+	text-align: center;
+}
+.top-nav li{
+	display: inline-block;
+    text-transform: uppercase;
+    margin: 0px 20px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.left-nav, .right-nav{
+	padding: 0px 40px;
+}
+.left-nav{
+	width: 250px;
+}
+.right-nav{
+	width: calc(100% - 250px);
+}
+.top-nav.col-8{
+	padding: 1rem 2rem 0rem;
+	margin-bottom: 2rem;
+}
+.nav-container{
+	width: 100%;
+    display: flex;
+}
+.left-nav ul{
+	min-height: calc(100vh - 237px);
+	position: relative;
+	margin: 0 -40px;
+}
+.left-nav ul:after{
+	content: '';
+    position: absolute;
+    right: 0px;
+    top: -67px;
+    bottom: -18px;
+    width: 1px;
+    background-color: #dadce0;
+}
+
+/* Button style starts here */
+.primary-button{
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+.primary-button, .link-button{
+	color:#2e2e2e;
+	background: #a9d4c7;
+	max-width: 200px;
+	width: 100%;
+	padding: 6px 10px;
+	border: 2px solid white;
+	border-radius: 10px;
+	box-shadow: none!important;
+	outline: none!important;
+	font-weight: bold;
+}
+.link-button{
+	background: transparent;
+	border: none!important;
+	font-weight: 400;
+}
+.link-button:hover{
+	color: #5583ad;
+}
+.whit-logo{
+	top: -54px;
+    width: 250px;
+    position: absolute;
+    left: -40px;
+}
+.left-nav li:first-child{
+	border-top: 1px solid #dadce0;
+}
+.left-nav li{
+	padding: 10px 20px;
+	border-bottom: 1px solid #dadce0;
+	cursor: pointer;
+}
+.left-nav li:hover{
+	background-color: #a9d4c7;
+}
+.nav-container{
+	position: relative;
+}
+.nav-container:after {
+    content: "";
+    background: #dadce0;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: -38px;
+}

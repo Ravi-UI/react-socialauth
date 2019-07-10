@@ -1,0 +1,95 @@
+#self-praise {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 3rem; */
+  margin-bottom: 3rem;
+}
+
+#self-praise__content-wrapper {
+  max-width: fit-content;
+}
+
+#self-praise__head-text {
+  /* font: 1.0rem "open_sansbold", sans-serif, sans-serif; */
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  /* font-size: 1.6rem; */
+}
+
+.self-praise__child {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.self-praise__title {
+  font-size: 2rem;
+  border-bottom: 0.3px solid white;
+  width: 31vw;
+  padding-bottom: 20px;
+  /* padding-right: 40px;
+	padding-left: 40px; */
+  text-align: center;
+  font-weight: lighter;
+}
+
+#self-praise__para {
+  width: 80%;
+  font-size: 1.3rem;
+  /* word-spacing: 0.2rem; */
+  /* line-height: 1.2; */
+  color: white;
+  /* letter-spacing: 3px; */
+  /* word-spacing: 6px; */
+  text-align: justify;
+  margin-bottom: 1.45rem;
+  /* font-weight: lighter; */
+
+  /* font-size: 1rem; */
+  /* font-family: "sans-serif", "sans-serif", sans-serif, "sans-serif", sans-serif; */
+}
+
+.link:hover {
+  color: #5582ac;
+}
+
+.btn {
+  height: 40px;
+  width: 250px;
+  background-color: rgba(80, 132, 175, 0.967);
+  text-transform: uppercase;
+  color: white !important;
+  /* letter-spacing: 3px; */
+}
+
+@media screen and (max-width: 1024px) {
+  #self-praise__head-text {
+    font-size: 2.5rem;
+  }
+  #self-praise__para {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .self-praise__title {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #self-praise__head-text {
+    font-size: 2.5rem;
+  }
+  #self-praise__para {
+    /* font-size: 1.15rem; */
+    text-align: justify;
+  }
+}

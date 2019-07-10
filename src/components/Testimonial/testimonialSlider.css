@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i");
+
+#testimonials-wrapper {
+  height: 550px;
+
+  border: 1px solid #000;
+
+  /* margin-right: 20px;
+  margin-left: 20px; */
+  background-color: rgb(100, 100, 100);
+  overflow: hidden;
+
+  /* padding-left: 15px;
+  padding-right: 15px; */
+
+  box-shadow: 0.3px 0.3px 5px 0.3px #000;
+
+  position: relative;
+}
+
+.testimonial-wrapper {
+  height: 550px;
+  width: 100%;
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(750px);
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+  margin: auto;
+  transition: transform 1s ease, opacity 1s ease;
+  color: white;
+}
+
+.heading-portion {
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-portion__quote {
+  font-family: "IM Fell Great Primer", serif;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.text-portion {
+  max-height: 400px;
+  display: block;
+  margin-bottom: 0;
+
+  text-align: justify;
+}
+
+.ending-portion {
+  height: 80px;
+  margin-bottom: 0;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Anim Styles -- Start */
+
+.go-up-and-beyond {
+  opacity: 0;
+  animation: slide-up-and-spy-down 2s ease 0s forwards !important;
+  overflow: hidden;
+}
+
+.let-me-see-you {
+  transform: translateY(0px);
+  z-index: 2;
+}
+@keyframes slide-up-and-spy-down {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-750px);
+    visibility: hidden !important;
+  }
+
+  75% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(750px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #testimonials-wrapper {
+    height: 750px;
+  }
+
+  .testimonial-wrapper {
+    height: 750px;
+    /* transform: translateY(750px); */
+  }
+
+  .text-portion {
+    max-height: 600px;
+  }
+}

@@ -1,0 +1,210 @@
+#about-us {
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 7rem;
+	padding-bottom: 5rem;
+
+	background-color: #333;
+}
+
+#about-us__content-wrapper {
+	max-width: fit-content;
+}
+
+#about-us__head-text {
+	/* font: 0.6rem "open_sansbold", arial, sans-serif; */
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	width: 31vw;
+	padding-bottom: 20px;
+	font-weight: lighter;
+	border-bottom: 0.3px solid white;
+	text-align: center;
+}
+
+#about-us__para {
+	width: 80%;
+	font-size: 1.2rem;
+	word-spacing: 0.1rem;
+	color: white;
+	border-bottom: "1px solid white";
+	padding-bottom: 55;
+	margin-bottom: 50;
+	/* margin-right: 2rem; */
+	text-align: justify;
+	font-family: sans-serif;
+}
+
+.about-us-wrapper {
+	background-color: #333;
+}
+
+.about-company {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5rem;
+}
+
+.about-company__img {
+	flex: 1;
+	/* width: 20%; */
+	align-content: center;
+	margin-left: 2.5rem;
+}
+
+.about-company__wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-owner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-whitlock__owner {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#about-whitlock__owner__head-text {
+	font-size: 1.6rem;
+	width: 31vw;
+	padding-bottom: 20px;
+	font-weight: lighter;
+	border-bottom: 0.3px solid white;
+	text-align: center;
+}
+
+.about-whitlock__owner__para {
+	width: 80%;
+	font-size: 1.2rem;
+	text-align: justify;
+}
+
+.about-whitlock__owner_img {
+	flex: 0.4;
+	align-content: center;
+	justify-content: center;
+	margin-right: 2rem;
+}
+
+#testimonial-wrapper {
+	background-color: rgb(100, 100, 100);
+	/* padding: 10px; */
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.testimonial-heading {
+	align-self: center;
+	text-align: center;
+	font-size: 1.6rem;
+	color: white;
+
+	width: 31vw;
+	padding-bottom: 20px;
+	font-weight: lighter;
+	border-bottom: 0.3px solid white;
+	/* text-align: center; */
+}
+
+.testimonial-secondary-heading {
+	text-align: center;
+	font-size: 1.2rem;
+	color: white;
+	padding-bottom: 20px;
+	font-weight: lighter;
+}
+
+.about-whitlock__owner__para__quote_img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.7rem;
+	border: 0.5px whitesmoke solid;
+	padding: 15px;
+	box-shadow: 0.3px 0.3px 5px 0.3px white;
+	text-align: justify;
+}
+
+.about-whitlock__owner__para__quote_img img {
+	/* flex: 1; */
+	height: 550px;
+	width: 470px;
+	margin-bottom: 0;
+}
+
+.about-whitlock__owner__para__quote_img span {
+	flex: 1;
+	margin-right: 15px;
+}
+
+.about-whitlock__owner__para__quote_img span p {
+	margin-bottom: 0;
+}
+
+.owner_name {
+	margin-top: 20px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+	.about-whitlock__owner__para__quote_img {
+		flex-direction: column-reverse;
+	}
+	.about-whitlock__owner__para__quote_img img {
+		margin-bottom: 30px;
+		height: 250px;
+		width: 200px;
+	}
+
+	.about-whitlock__owner__para__quote_img span {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.about-company {
+		flex-direction: column;
+	}
+
+	.about-owner {
+		flex-direction: column-reverse;
+	}
+
+	.about-whitlock__owner_img {
+		margin-right: 0rem;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#about-us__head-text {
+		width: fit-content;
+	}
+
+	#about-whitlock__owner__head-text {
+		width: fit-content;
+	}
+
+	.testimonial-heading {
+		width: fit-content;
+	}
+}
